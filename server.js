@@ -8,7 +8,7 @@ app.use(express.static(__dirname + '/public'))
 
 io.on('connection', function () {
     console.log('User connected by the help of socket.io...');
-})
+});
 
 http.listen(PORT, function () {
     console.log("Server started on port : " + PORT);
